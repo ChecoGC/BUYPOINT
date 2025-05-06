@@ -11,8 +11,8 @@ public class Conexion {
     try {
         Connection cn = DriverManager.getConnection(
             "jdbc:mysql://localhost/sistema_ventas?useSSL=false&allowPublicKeyRetrieval=true",
-            "",
-            ""
+            "",  //Aqui va el usuario
+            "" //Aqui va la contraseña
         );
         return cn;
     } catch (SQLException e) {
